@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MediaObserver } from '@angular/flex-layout';
 
 @Component({
-  selector: 'app-Profile',
-  templateUrl: './Profile.component.html',
-  styleUrls: ['./Profile.component.scss']
+  selector: 'when-gt-md',
+  templateUrl: './WhenGtMd.component.html',
+  styleUrls: ['./WhenGtMd.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class WhenGtMdComponent implements OnInit {
 
   constructor(public mediaObserver: MediaObserver) { }
 
