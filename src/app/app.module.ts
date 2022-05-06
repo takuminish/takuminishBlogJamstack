@@ -14,12 +14,14 @@ import { WhenGtXsComponent } from './shared/layout/WhenGtXs/WhenGtXs.component';
 import { WhenLtLgComponent } from './shared/layout/WhenLtLg/WhenLtLg.component';
 import { WhenLtSmComponent } from './shared/layout/WhenLtSm/WhenLtSm.component';
 import { WhenLtXlComponent } from './shared/layout/WhenLtXl/WhenLtXl.component';
+import { ExperienceComponent } from './top/Experience/Experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopComponent,
     ProfileComponent,
+    ExperienceComponent,
     WhenLtMdComponent,
     WhenGtLgComponent,
     WhenGtMdComponent,
