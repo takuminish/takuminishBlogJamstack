@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-Profile',
@@ -8,7 +7,7 @@ import { MediaObserver } from '@angular/flex-layout';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(public mediaObserver: MediaObserver) { }
+  constructor() { }
 
   ngOnInit() {
   }

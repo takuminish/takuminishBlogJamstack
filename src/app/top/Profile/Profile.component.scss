@@ -7,5 +7,14 @@
          border-radius: 50%;
          border: solid 2px #ffffff;
          text-align: left;
+         min-width: 150px;
      }
-}
+    }
+    .profile-img-container {
+        width: 150px; 
+        margin:auto;
+    }
+
+    .profile-content-container {
+        text-align: center;
+    }
