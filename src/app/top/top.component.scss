@@ -18,6 +18,7 @@
 
     .history {
         position: relative;
+        padding: 50px 0px;
     
 
     .history-timeline {
@@ -81,7 +82,7 @@
             width: 45px;
             height: 2px;
             background: #006E51;
-            right: -35px;
+            right: -5%;
             top: 40%;
             margin-left: -1px;
         }
@@ -92,7 +93,7 @@
             width: 16px;
             height: 16px;
             top: calc(40% - 8px);
-            right: -35px;
+            right: -6.5%;
             background: #ffffff;
             border: 2px solid #006E51;
             border-radius: 16px;
@@ -127,7 +128,7 @@
             width: 45px;
             height: 2px;
             background: #006E51;
-            left: -30px;
+            left: -5%;
             top: 40%;
             margin-left: -1px;
         }
@@ -138,7 +139,7 @@
             width: 16px;
             height: 16px;
             top: calc(40% - 8px);
-            left: -35px;
+            left: -6.5%;
             background: #ffffff;
             border: 2px solid #006E51;
             border-radius: 16px;
