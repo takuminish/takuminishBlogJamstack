@@ -15,6 +15,7 @@ import { WhenLtLgComponent } from './shared/layout/WhenLtLg/WhenLtLg.component';
 import { WhenLtSmComponent } from './shared/layout/WhenLtSm/WhenLtSm.component';
 import { WhenLtXlComponent } from './shared/layout/WhenLtXl/WhenLtXl.component';
 import { ExperienceComponent } from './top/Experience/Experience.component';
+import { SkillComponent } from './top/Skill/Skill.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ExperienceComponent } from './top/Experience/Experience.component';
     TopComponent,
     ProfileComponent,
     ExperienceComponent,
+    SkillComponent,
     WhenLtMdComponent,
     WhenGtLgComponent,
     WhenGtMdComponent,
