@@ -1,3 +1,6 @@
+@import "../../../style/mixin";
+@import "../../../style/breakpoint";
+
 .experience {
     padding: 3.5rem 0 4rem;
     background-color: #f1f5f9;
@@ -70,9 +73,10 @@
                     width: 45px;
                     height: 2px;
                     background: #006E51;
-                    right: -5%;
                     top: 40%;
                     margin-left: -1px;
+                    right: -5%;
+
                 }
 
                 &::after {
@@ -80,12 +84,17 @@
                     position: absolute;
                     width: 16px;
                     height: 16px;
-                    top: calc(40% - 8px);
-                    right: -7.5%;
+                    top: calc(40% - 8px);                  
                     background: #ffffff;
                     border: 2px solid #006E51;
                     border-radius: 16px;
                     z-index: 1;
+                    @include mq(lt-xl) {
+                        right: -6.5%;
+                    }
+                    @include mq(lt-md) {
+                        right: -7.5%;
+                    }
                 }
             }
 
@@ -128,11 +137,16 @@
                     width: 16px;
                     height: 16px;
                     top: calc(40% - 8px);
-                    left: -7.5%;
                     background: #ffffff;
                     border: 2px solid #006E51;
                     border-radius: 16px;
                     z-index: 1;
+                    @include mq(lt-xl) {
+                        left: -6.5%;
+                    }
+                    @include mq(lt-md) {
+                        left: -7.5%;
+                    }
                 }
             }
         }
@@ -216,7 +230,7 @@
                     width: 16px;
                     height: 16px;
                     top: calc(40% - 8px);
-                    left: -12%;
+                    left: -12.5%;
                     background: #ffffff;
                     border: 2px solid #006E51;
                     border-radius: 16px;
