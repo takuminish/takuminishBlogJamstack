@@ -6,10 +6,10 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HeaderComponent } from './Header/Header.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
-      HeaderComponent
-   ],
+    HeaderComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
