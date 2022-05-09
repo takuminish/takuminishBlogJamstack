@@ -1,0 +1,21 @@
+.skills {
+    padding: 3.5rem 0 4rem;
+    background-color: #e6f2ff;
+
+    .skills-title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 75px);
+            width: 150px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: #000000d1;
+        }
+    }
+}

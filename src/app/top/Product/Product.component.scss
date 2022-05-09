@@ -1,0 +1,26 @@
+
+.product {
+    padding: 3.5rem 0 4rem;
+    background-color: #ffe6e6;
+
+    .product-title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 75px);
+            width: 150px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: #000000d1;
+        }
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
