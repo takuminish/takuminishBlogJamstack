@@ -2,9 +2,11 @@ version: '3'
 
 services:
   app:
-    build: ./
+    build: ./app.Dockerfile
     ports: 
       - 4200:4200
+      - 1668:1668
+      - 1864:1864
     volumes: 
       - './:/app'
       - node_modules_volume:/app/node_modules

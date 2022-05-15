@@ -1,5 +1,0 @@
-FROM node:16
-
-WORKDIR /app
-
-EXPOSE 4200
