@@ -1,12 +1,29 @@
 version: '3'
 
 services:
+  web-scully:
+    build:
+      context: .
+      dockerfile: web.Dockerfile
+    ports: 
+      - 1668:80
+    volumes:
+      - ./dist/static:/usr/share/nginx/html
+  web:
+    build:
+      context: .
+      dockerfile: web.Dockerfile
+    ports: 
+      - 1864:80
+    volumes:
+      - ./dist/takuminish-blog-jamstack:/usr/share/nginx/html
+
   app:
-    build: ./app.Dockerfile
+    build:
+      context: .
+      dockerfile: app.Dockerfile
     ports: 
       - 4200:4200
-      - 1668:1668
-      - 1864:1864
     volumes: 
       - './:/app'
       - node_modules_volume:/app/node_modules
