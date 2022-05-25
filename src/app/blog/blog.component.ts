@@ -15,12 +15,15 @@ declare var ng: any;
 })
 export class BlogComponent implements OnInit {
   links$: Observable<ScullyRoute[]> = this.scully.available$;
+  currentPost$: Observable<ScullyRoute> = this.scully.getCurrent();
 
   ngOnInit() {
     // debug current pages
     this.links$.subscribe((links) => {
       console.log(links);
     });
+
+    this.currentPost$.subscribe(s => console.log(s))
   }
 
   constructor(private router: Router, private route: ActivatedRoute, private scully: ScullyRoutesService) {
