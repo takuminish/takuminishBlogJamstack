@@ -1,7 +1,47 @@
-<h3>ScullyIo content</h3>
-<hr>
-
-<!-- This is where Scully will inject the static HTML -->
-<scully-content></scully-content>
-<hr>
-<h4>End of content</h4>
+<article class="container">
+    <header *ngIf="currentPost$ | async as currentPost" class="pt-6 xl:pb-10">
+        <div class="space-y-1 text-center">
+            <div>
+                <h1
+                    class="m-auto text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+                    {{ currentPost.title }}</h1>
+            </div>
+            <dl class="space-y-10" *ngIf="currentPost.publishedAt">
+                <div>
+                    <dt class="sr-only">Published on</dt>
+                    <dd class="text-base leading-6 font-medium text-gray-500">
+                        投稿日: <time [dateTime]="currentPost.publishedAt"> {{ currentPost.publishedAt | date: "yyyy-MM-dd"
+                            }}
+                        </time>
+                    </dd>
+                </div>
+            </dl>
+            <div class="flex">
+                <div class="grow">
+                    <span
+                        class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-sky-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-blue-500" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+                        </svg>
+                        <span class="pl-2">{{currentPost.category}}</span>
+                    </span>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="grow">
+                    <span *ngFor="let tag of currentPost.tags"
+                        class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-slate-400 rounded-full">{{tag}}</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- This is where Scully will inject the static HTML -->
+    <div class="flex">
+        <div class="grow">
+            <div class="prose max-w-none pt-10 pb-8">
+                <scully-content></scully-content>
+            </div>
+        </div>
+    </div>
+</article>
