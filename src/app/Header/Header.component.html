@@ -1,22 +1,22 @@
 <header class="app-header">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" id="navbar-brand" [routerLink]="['/']">Takuminish</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" id="home-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
-              aria-current="page" [routerLink]="['/']">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="blog-link" [routerLinkActive]="['active']" aria-current=" page"
-              [routerLink]="['/blog']">Blog</a>
-          </li>
-        </ul>
+  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 bg-opacity-0">
+    <div class="flex items-center flex-shrink-0 text-gray-500 mr-6 hover:text-gray-900" routerLink="/">
+      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
+      </svg>
+      <span class="font-semibold text-3xl tracking-tight">Takuminish.dev</span>
+    </div>
+    <div class="w-full block flex-grow flex items-center w-auto">
+      <div class="text-sm lg:flex-grow">
+        <span routerLink="/"
+          class="text-gray-500 group bg-white rounded-md inline-flex items-center text-2xl font-medium hover:text-gray-900  mr-6"
+          aria-expanded="false">Home</span>
+
+        <span routerLink="/blog"
+          class="text-gray-500 group bg-white rounded-md inline-flex items-center text-2xl font-medium hover:text-gray-900  mr-6"
+          aria-expanded="false">Blog</span>
       </div>
     </div>
   </nav>
