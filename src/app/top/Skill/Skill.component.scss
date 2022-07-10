@@ -1,12 +1,5 @@
 .skills {
-    padding: 3.5rem 0 4rem;
-    background-color: #e6f2ff;
-
     .skills-title {
-        text-align: center;
-        position: relative;
-        margin-bottom: 50px;
-
         &::before {
             content: "";
             position: absolute;
