@@ -56,7 +56,7 @@ public class Main {
             
         } 
         
-        System.out.println(answer-1));
+        System.out.println(answer-1);
     }
 
 }
