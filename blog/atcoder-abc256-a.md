@@ -26,7 +26,6 @@ N
 # 解答
 
 ```java
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
