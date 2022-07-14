@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-blogs',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogsComponent implements OnInit {
 
-  constructor() { }
+  links$: Observable<ScullyRoute[]> = this.scully.available$;
+  blogList: ScullyRoute[] = [];
+
+  constructor(private scully: ScullyRoutesService) { }
 
   ngOnInit() {
+    // debug current pages
+    this.links$.subscribe(link => {
+      this.blogList = link.filter(l => l.route !== '/')
+    })
   }
 
 }
