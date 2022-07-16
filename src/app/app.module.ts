@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HeaderComponent } from './Header/Header.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { SharedModule } from './shared/Shared.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BlogsComponent } from './blogs/blogs.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScullyLibModule
+    ScullyLibModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
