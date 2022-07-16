@@ -8,6 +8,7 @@ import { WhenGtXsComponent } from './layout/WhenGtXs/WhenGtXs.component';
 import { WhenLtLgComponent } from './layout/WhenLtLg/WhenLtLg.component';
 import { WhenLtSmComponent } from './layout/WhenLtSm/WhenLtSm.component';
 import { WhenLtXlComponent } from './layout/WhenLtXl/WhenLtXl.component';
+import { WhenXsComponent } from './layout/WhenXs/WhenXs.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { WhenLtXlComponent } from './layout/WhenLtXl/WhenLtXl.component';
     WhenGtXsComponent,
     WhenLtLgComponent,
     WhenLtSmComponent,
-    WhenLtXlComponent
+    WhenLtXlComponent,
+    WhenXsComponent
   ],
   exports: [
     WhenLtMdComponent,
@@ -31,7 +33,8 @@ import { WhenLtXlComponent } from './layout/WhenLtXl/WhenLtXl.component';
     WhenGtXsComponent,
     WhenLtLgComponent,
     WhenLtSmComponent,
-    WhenLtXlComponent
+    WhenLtXlComponent,
+    WhenXsComponent
   ]
 })
 export class SharedModule { }
