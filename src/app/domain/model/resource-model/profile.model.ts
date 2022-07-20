@@ -1,3 +1,5 @@
+import { MicroCMSImage } from "microcms-js-sdk";
+
 /**
  * プロフィールモデル
  */
@@ -9,7 +11,7 @@ export interface Profile {
     introduction: string;
 
     /** プロフィール画像 */
-    profileImage: string;
+    profileImage: MicroCMSImage;
 
     /** GitHubURL */
     githubUrl: string;

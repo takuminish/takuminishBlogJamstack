@@ -13,7 +13,11 @@ export class ProfileComponent implements OnInit {
   @Input() profile: Profile = {
     name: '',
     introduction: '',
-    profileImage: '',
+    profileImage: {
+      url: '',
+      width: 0,
+      height: 0
+    },
     githubUrl: '',
     qiitaUrl: '',
     zennUrl: '',

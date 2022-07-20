@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { client } from 'src/environments/environment.api'
+import { TakuminishProfile } from '../domain/model/resource-model/takuminishprofile.model';
 
 @Component({
   selector: 'app-top',
@@ -8,7 +9,25 @@ import { client } from 'src/environments/environment.api'
 })
 export class TopComponent implements OnInit {
 
-  public profile: any;
+  public takuminishProfile: TakuminishProfile = {
+    profile: {
+      name: '',
+      introduction: '',
+      profileImage: {
+        url: '',
+        width: 0,
+        height: 0
+      },
+      githubUrl: '',
+      qiitaUrl: '',
+      zennUrl: '',
+      twitterUrl: ''
+    },
+    experiences: [],
+    skills: [],
+    lisences: [],
+    products: []
+  };
 
   constructor() { }
 
@@ -20,7 +39,7 @@ export class TopComponent implements OnInit {
     const data = await client.get({
       endpoint: 'profile',
     });
-    this.profile = data;
+    this.takuminishProfile = data;
   }
 
 }
