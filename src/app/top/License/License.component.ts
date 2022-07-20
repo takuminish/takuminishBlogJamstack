@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { License } from 'src/app/domain/model/resource-model/license.model';
 
 @Component({
   selector: 'app-License',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LicenseComponent implements OnInit {
 
+  /** 資格一覧 */
+  @Input() licenses: License[] = [];
+
+  /** 非IT系資格一覧 */
+  public notTechnologyLicenses: License[] = [];
+
+  /** IT系資格一覧 */
+  public technologyLicenses: License[] = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.notTechnologyLicenses = this.licenses.filter(l => !l.isITLicense);
+    this.technologyLicenses = this.licenses.filter(l => l.isITLicense);
   }
 
 }
