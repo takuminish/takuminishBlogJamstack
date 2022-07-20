@@ -15,6 +15,9 @@ export const config: ScullyConfig = {
         folder: "./blog"
       }
     },
+    '/': {
+      type: 'json',
+    }
   },
   puppeteerLaunchOptions: {
     args: ['--no-sandbox', '--disable-setuid--sandbox'],
