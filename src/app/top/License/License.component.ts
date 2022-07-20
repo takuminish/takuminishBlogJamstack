@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { License } from 'src/app/domain/model/resource-model/license.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { License } from 'src/app/domain/model/resource-model/license.model';
   templateUrl: './License.component.html',
   styleUrls: ['./License.component.scss']
 })
-export class LicenseComponent implements OnInit {
+export class LicenseComponent implements OnInit, OnChanges {
 
   /** 資格一覧 */
   @Input() licenses: License[] = [];
@@ -20,8 +20,11 @@ export class LicenseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.licenses);
-    this.notTechnologyLicenses = this.licenses.filter(l => !l.isITLicense);
+
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.notTechnologyLicenses = this.licenses.filter(l => !l.isITLicense)
     this.technologyLicenses = this.licenses.filter(l => l.isITLicense);
   }
 }
