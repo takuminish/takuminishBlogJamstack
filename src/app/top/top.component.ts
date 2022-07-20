@@ -25,7 +25,7 @@ export class TopComponent implements OnInit {
     },
     experiences: [],
     skills: [],
-    lisences: [],
+    licenses: [],
     products: []
   };
 
@@ -40,6 +40,7 @@ export class TopComponent implements OnInit {
       endpoint: 'profile',
     });
     this.takuminishProfile = data;
+    console.log(this.takuminishProfile)
   }
 
 }

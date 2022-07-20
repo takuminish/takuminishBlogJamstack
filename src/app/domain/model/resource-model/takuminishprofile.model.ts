@@ -18,7 +18,7 @@ export interface TakuminishProfile {
     skills: Skill[];
 
     /** 資格情報 */
-    lisences: License[];
+    licenses: License[];
 
     /** 成果物情報 */
     products: Product[];

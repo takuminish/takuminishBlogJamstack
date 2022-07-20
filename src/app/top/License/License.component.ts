@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, Input, OnInit } from '@angular/core';
 import { License } from 'src/app/domain/model/resource-model/license.model';
 
 @Component({
@@ -20,8 +20,8 @@ export class LicenseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.licenses);
     this.notTechnologyLicenses = this.licenses.filter(l => !l.isITLicense);
     this.technologyLicenses = this.licenses.filter(l => l.isITLicense);
   }
-
 }

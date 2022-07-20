@@ -9,7 +9,7 @@ export interface Product {
     name: string;
 
     /** 詳細情報 */
-    detailedInfomation: string;
+    detailedInformation: string;
 
     /** 使用技術一覧 */
     useSkills: string[];
