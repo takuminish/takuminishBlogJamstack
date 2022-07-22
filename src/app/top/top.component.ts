@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { client } from 'src/environments/environment.api'
 import { TakuminishProfile } from '../domain/model/resource-model/takuminishprofile.model';
+import { ProfileService } from '../domain/service/profile.service';
 
 @Component({
   selector: 'app-top',
@@ -29,18 +29,15 @@ export class TopComponent implements OnInit {
     products: []
   };
 
-  constructor() { }
+  constructor(private profileService: ProfileService) { }
 
   ngOnInit() {
-    this.getData()
+    this.fetchProfile()
   }
 
-  public async getData(): Promise<void> {
-    const data = await client.get({
-      endpoint: 'profile',
-    });
+  public async fetchProfile(): Promise<void> {
+    const data = await this.profileService.fetchProfile()
     this.takuminishProfile = data;
-    console.log(this.takuminishProfile)
   }
 
 }
