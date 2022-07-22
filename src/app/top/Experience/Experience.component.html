@@ -9,8 +9,7 @@
         <div class="history-title">
           <h3>{{experience.title}} {{experience.startAt}} {{experience.endAt}}</h3>
         </div>
-        <div class="history-content">
-          {{experience.detailedInformation}}
+        <div class="history-content" [innerHTML]="experience.detailedInformation">
         </div>
       </article>
     </ng-container>
