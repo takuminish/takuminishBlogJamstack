@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
-import { HeaderComponent } from './Header/Header.component';
-import { BlogsComponent } from './blogs/blogs.component';
-import { SharedModule } from './shared/Shared.module';
+import { HeaderComponent } from './presentation/components/Header/Header.component';
+import { SharedModule } from './presentation/components/shared/Shared.module';
+import { ProfileRepository } from './domain/repositories/profilerepository/profile.repository';
+import { ProfileRepositoryImpl } from './infra/repositories/profilerepository/profile.repository';
 
+/**
+ * AppModule
+ */
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +22,8 @@ import { SharedModule } from './shared/Shared.module';
     ScullyLibModule,
     SharedModule
   ],
-  providers: [],
+  providers:
+    [{ provide: ProfileRepository, useClass: ProfileRepositoryImpl }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

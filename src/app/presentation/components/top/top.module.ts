@@ -9,6 +9,9 @@ import { SkillComponent } from './Skill/Skill.component';
 import { TopRoutingModule } from './top-routing.module';
 import { TopComponent } from './top.component';
 
+/**
+ * TopModule
+ */
 @NgModule({
     declarations: [
         TopComponent,
@@ -26,6 +29,7 @@ import { TopComponent } from './top.component';
         SkillComponent,
         LicenseComponent,
         ProductComponent
-    ]
+    ],
+
 })
 export class TopModule { }
