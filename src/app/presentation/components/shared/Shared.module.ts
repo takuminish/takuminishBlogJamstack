@@ -10,6 +10,9 @@ import { WhenLtSmComponent } from './layout/WhenLtSm/WhenLtSm.component';
 import { WhenLtXlComponent } from './layout/WhenLtXl/WhenLtXl.component';
 import { WhenXsComponent } from './layout/WhenXs/WhenXs.component';
 
+/**
+ * SharedModule
+ */
 @NgModule({
   imports: [
     CommonModule

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
-import { Observable } from 'rxjs';
 
-
+/**
+ * App Component
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,8 +11,8 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'takuminishBlogJamstack';
 
+  /**
+   * コンストラクタ
+   */
   constructor() { }
-
-  ngOnInit() {
-  }
 }
