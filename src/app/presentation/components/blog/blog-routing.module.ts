@@ -1,8 +1,10 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { BlogComponent } from './blog.component';
 
-import {BlogComponent} from './blog.component';
-
+/**
+ * /blog/以下のRouting
+ */
 const routes: Routes = [
   {
     path: ':slug',
@@ -18,5 +20,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class BlogRoutingModule {}
+export class BlogRoutingModule { }
 

@@ -1,23 +1,23 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Router, ROUTES } from '@angular/router';
-import { isScullyGenerated, ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { Observable } from 'rxjs';
 
-declare var ng: any;
-
+/**
+ * ブログページのコンポーネント
+ */
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.scss'],
-  preserveWhitespaces: true,
-  encapsulation: ViewEncapsulation.Emulated
-
 })
-export class BlogComponent implements OnInit {
+export class BlogComponent {
   currentPost$: Observable<ScullyRoute> = this.scully.getCurrent();
 
-  ngOnInit() { }
-
-  constructor(private router: Router, private route: ActivatedRoute, private scully: ScullyRoutesService) {
+  /**
+   * コンストラクタ
+   * @param scully 
+   */
+  constructor(private scully: ScullyRoutesService) {
   }
 }
