@@ -1,13 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Profile } from 'src/app/domain/model/resource-model/profile.model';
 
-
+/**
+ * プロフィール情報のコンポーネント
+ */
 @Component({
   selector: 'app-Profile',
   templateUrl: './Profile.component.html',
   styleUrls: ['./Profile.component.scss']
 })
-export class ProfileComponent implements OnInit {
+export class ProfileComponent {
 
   /** プロフィール情報 */
   @Input() profile: Profile = {
@@ -24,8 +26,9 @@ export class ProfileComponent implements OnInit {
     twitterUrl: ''
   };
 
+  /**
+   * コンストラクタ
+   */
   constructor() { }
 
-  ngOnInit() {
-  }
 }
