@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Profile } from 'src/app/domain/model/resource-model/profile.model';
+import { environment } from 'src/environments/environment';
 
 /**
  * プロフィール情報のコンポーネント
@@ -11,6 +12,9 @@ import { Profile } from 'src/app/domain/model/resource-model/profile.model';
 })
 export class ProfileComponent {
 
+  get environment() {
+    return environment
+  }
   /** プロフィール情報 */
   @Input() profile: Profile = {
     name: '',

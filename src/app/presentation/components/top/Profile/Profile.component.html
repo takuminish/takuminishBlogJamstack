@@ -23,14 +23,14 @@
         <h2 class="font-semibold text-3xl tracking-tight">{{profile.name}}</h2>
         <p>{{profile.introduction}}</p>
         <div class="flex gap-4 justify-center">
-          <a target="_blank" [href]="profile.githubUrl"><img src="/assets/images/github-logo.png" width="35"
-              height="35"></a>
-          <a target="_blank" [href]="profile.twitterUrl"><img src="/assets/images/twitter-logo.svg" width="35"
-              height="35"></a>
-          <a target="_blank" [href]="profile.qiitaUrl"><img src="/assets/images/qiita-logo.png" width="35"
-              height="35"></a>
-          <a target="_blank" [href]="profile.zennUrl"><img src="/assets/images/zenn-logo.svg" width="35"
-              height="35"></a>
+          <a target="_blank" [href]="profile.githubUrl"><img src="{{environment.url}}/assets/images/github-logo.png"
+              width="35" height="35"></a>
+          <a target="_blank" [href]="profile.twitterUrl"><img src="{{environment.url}}/assets/images/twitter-logo.svg"
+              width="35" height="35"></a>
+          <a target="_blank" [href]="profile.qiitaUrl"><img src="{{environment.url}}/assets/images/qiita-logo.png"
+              width="35" height="35"></a>
+          <a target="_blank" [href]="profile.zennUrl"><img src="{{environment.url}}/assets/images/zenn-logo.svg"
+              width="35" height="35"></a>
         </div>
       </div>
     </div>

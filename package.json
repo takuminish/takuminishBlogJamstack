@@ -10,8 +10,9 @@
     "test": "ng test",
     "scully": "npx scully --",
     "scully:serve": "npx scully serve -- ",
-    "scully:build": "ng build && npx scully --",
-    "scully:deploy": "ng build --prod && npx scully -- && gh-pages -d dist/static"
+    "scully:build": "ng build --prod  && npx scully -- --scanRoutes",
+    "scully:deploy": "ng build --prod && npx scully -- && gh-pages -d dist/static",
+    "deploy": "gh-pages -d dist/static"
   },
   "private": true,
   "dependencies": {
