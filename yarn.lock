@@ -1431,6 +1431,30 @@
   dependencies:
     "tslib" "^2.3.1"
 
+"@scullyio/scully-plugin-base-href-rewrite@^2.1.36":
+  "integrity" "sha512-0kKH3x+R/FZ92tTaGjx7GTWBFBgDR9WI7Dj9Qo4YexqZSgBpYLKYVpRJn0MbqUaldWpDaWUdz5pGj+3xysDvkQ=="
+  "resolved" "https://registry.npmjs.org/@scullyio/scully-plugin-base-href-rewrite/-/scully-plugin-base-href-rewrite-2.1.36.tgz"
+  "version" "2.1.36"
+  dependencies:
+    "@angular/common" "12.2.6"
+    "@angular/core" "12.2.6"
+    "@angular/platform-server" "12.2.6"
+    "@sentry/node" "^6.12.0"
+    "asciidoctor" "^2.2.5"
+    "chalk" "^4.1.2"
+    "chokidar" "^3.5.3"
+    "compression" "^1.7.4"
+    "cors" "^2.8.5"
+    "express" "4.17.3"
+    "js-yaml" "^4.1.0"
+    "os" "^0.1.2"
+    "prismjs" "^1.27.0"
+    "puppeteer" "^13.4.1"
+    "rxjs" "^7.5.4"
+    "selfsigned" "^2.0.0"
+    "ws" "^8.5.0"
+    "zone.js" "0.11.4"
+
 "@scullyio/scully-plugin-puppeteer@^2.1.32":
   "integrity" "sha512-oJpo9aFUsNy3A72dxHU8q82GdG1+4eLqv6JpJFJuBx77WVnWneBOclUfFHeJPMMdLZuw1wpa227x56V5lGNnZg=="
   "resolved" "https://registry.npmjs.org/@scullyio/scully-plugin-puppeteer/-/scully-plugin-puppeteer-2.1.32.tgz"

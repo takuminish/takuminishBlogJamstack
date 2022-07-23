@@ -31,6 +31,7 @@
     "@scullyio/ng-lib": "^2.1.0",
     "@scullyio/platform-server": "^2.1.0",
     "@scullyio/scully": "^2.1.0",
+    "@scullyio/scully-plugin-base-href-rewrite": "^2.1.36",
     "@scullyio/scully-plugin-puppeteer": "^2.1.32",
     "microcms-js-sdk": "^2.0.0",
     "popper.js": "^1.16.1",
