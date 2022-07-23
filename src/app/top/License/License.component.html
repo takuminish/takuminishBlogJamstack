@@ -17,7 +17,7 @@
           <ng-container *ngFor="let license of technologyLicenses">
             <tr>
               <td class="border px-4 py-2">{{license.name}}</td>
-              <td class="border px-4 py-2">{{license.passedAt}}</td>
+              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy/MM/dd"}}</td>
             </tr>
           </ng-container>
         </tbody>
@@ -34,7 +34,7 @@
           <ng-container *ngFor="let license of notTechnologyLicenses">
             <tr>
               <td class="border px-4 py-2">{{license.name}}</td>
-              <td class="border px-4 py-2">{{license.passedAt}}</td>
+              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy/MM/dd"}}</td>
             </tr>
           </ng-container>
         </tbody>
