@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: web.Dockerfile
     ports: 
-      - 1668:80
+      - 80:80
     volumes:
       - ./dist/static:/usr/share/nginx/html
   web:

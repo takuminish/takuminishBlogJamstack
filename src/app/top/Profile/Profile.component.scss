@@ -2,10 +2,8 @@
      .profile-img {
          width: 150px;
          height: 150px;
-         border-radius: 50%;
-         border: solid 2px #ffffff;
          text-align: left;
-     }
+     
     }
     .profile-img-container {
         width: 150px; 
@@ -16,3 +14,9 @@
         text-align: center;
         margin: auto;
     }
+}
+
+svg, img {
+    display: inline;
+}
+
