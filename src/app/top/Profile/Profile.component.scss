@@ -3,7 +3,7 @@
          width: 150px;
          height: 150px;
          text-align: left;
-     }
+     
     }
     .profile-img-container {
         width: 150px; 
@@ -14,3 +14,9 @@
         text-align: center;
         margin: auto;
     }
+}
+
+svg, img {
+    display: inline;
+}
+
