@@ -1,9 +1,12 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { ScullyConfig, setPluginConfig } from '@scullyio/scully';
+import { baseHrefRewrite } from '@scullyio/scully-plugin-base-href-rewrite';
 
-/** this loads the default render plugin, remove when switching to something else. */
+const defaultPostRenderers = ['seoHrefOptimise', baseHrefRewrite];
+setPluginConfig(baseHrefRewrite, { href: '/takuminishBlogJamstack/' });
 
 
 export const config: ScullyConfig = {
+  defaultPostRenderers,
   projectRoot: "./src",
   projectName: "takuminishBlogJamstack",
   spsModulePath: 'YOUR OWN MODULE PATH HERE',
@@ -14,6 +17,9 @@ export const config: ScullyConfig = {
       slug: {
         folder: "./blog"
       }
-    },
-  }
+    }
+  },
+  puppeteerLaunchOptions: {
+    args: ['--no-sandbox', '--disable-setuid--sandbox'],
+  },
 };

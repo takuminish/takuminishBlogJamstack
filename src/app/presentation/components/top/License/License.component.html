@@ -1,0 +1,44 @@
+<section class="licenses pb-16">
+  <div>
+    <h2 class="licenses-title relative mb-8 text-center font-semibold text-3xl tracking-tight">Licenses
+    </h2>
+  </div>
+  <div>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <h3 class="relative mb-2 text-center font-semibold text-xl tracking-tight w-full">IT系資格</h3>
+      <table class="table-fixed w-full">
+        <thead class="bg-gray-50 border">
+          <tr>
+            <th class="border px-4 py-2">資格名</th>
+            <th class="border px-4 py-2">取得年月日</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let license of technologyLicenses">
+            <tr>
+              <td class="border px-4 py-2">{{license.name}}</td>
+              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy/MM/dd"}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+      <h3 class="relative mb-2 text-center font-semibold text-xl tracking-tight w-full">非IT系資格</h3>
+      <table class="table-fixed w-full">
+        <thead class="bg-gray-50 border">
+          <tr>
+            <th class="border px-4 py-2">資格名</th>
+            <th class="border px-4 py-2">取得年月日</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let license of notTechnologyLicenses">
+            <tr>
+              <td class="border px-4 py-2">{{license.name}}</td>
+              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy/MM/dd"}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+.skills {
+    .skills-title {
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 75px);
+            width: 150px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: #000000d1;
+        }
+    }
+}

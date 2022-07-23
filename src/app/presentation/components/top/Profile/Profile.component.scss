@@ -1,0 +1,22 @@
+.profile {
+     .profile-img {
+         width: 150px;
+         height: 150px;
+         text-align: left;
+     
+    }
+    .profile-img-container {
+        width: 150px; 
+        margin:auto;
+    }
+
+    .profile-content-container {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+svg, img {
+    display: inline;
+}
+

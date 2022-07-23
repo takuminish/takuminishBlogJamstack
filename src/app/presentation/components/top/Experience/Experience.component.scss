@@ -1,0 +1,60 @@
+.experience {
+    .experience-title {
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: calc(50% - 75px);
+            width: 150px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: #000000d1;
+        }
+    }
+
+        .history {
+            .history-timeline {
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid #006E51;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    right: -7px;
+                    z-index: 1;
+                    background: #ffffff;
+                }
+
+                &::after {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid #006E51;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 0;
+                    right: -7px;
+                    z-index: 1;
+                    background: #ffffff;
+                }
+            }
+
+            .history-article {
+                .history-point {
+                    top: calc(50% - 12px);
+                }
+            
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 2px;
+                    background: #006E51;
+                    top: 50%;   
+                    left: -40px;
+                }
+            }
+        }
+}
