@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
+import { isScullyGenerated } from '@scullyio/ng-lib';
+import { Observable, takeUntil } from 'rxjs';
 import { TakuminishProfile } from '../domain/model/resource-model/takuminishprofile.model';
 import { ProfileService } from '../domain/service/profile.service';
 
@@ -7,7 +9,9 @@ import { ProfileService } from '../domain/service/profile.service';
   templateUrl: './top.component.html',
   styleUrls: ['./top.component.scss']
 })
-export class TopComponent implements OnInit {
+export class TopComponent implements OnInit, OnDestroy {
+
+  private onDestroy$ = new EventEmitter();
 
   public takuminishProfile: TakuminishProfile = {
     profile: {
@@ -35,9 +39,13 @@ export class TopComponent implements OnInit {
     this.fetchProfile()
   }
 
-  public async fetchProfile(): Promise<void> {
-    const data = await this.profileService.fetchProfile()
-    this.takuminishProfile = data;
+  ngOnDestroy() {
+    this.onDestroy$.emit();
   }
 
+  public fetchProfile(): void {
+    this.profileService.fetchProfile().pipe(takeUntil(this.onDestroy$),).subscribe(d => {
+      this.takuminishProfile = d;
+    });
+  }
 }

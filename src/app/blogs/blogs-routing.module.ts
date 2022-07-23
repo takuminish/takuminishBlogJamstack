@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: BlogsComponent,
+  },
+  {
+    path: '**',
+    component: BlogsComponent,
   }
 ];
 

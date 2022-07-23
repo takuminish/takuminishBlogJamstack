@@ -1,6 +1,5 @@
 import { ScullyConfig } from '@scullyio/scully';
 
-/** this loads the default render plugin, remove when switching to something else. */
 
 
 export const config: ScullyConfig = {
@@ -14,9 +13,6 @@ export const config: ScullyConfig = {
       slug: {
         folder: "./blog"
       }
-    },
-    '/': {
-      type: 'json',
     }
   },
   puppeteerLaunchOptions: {
