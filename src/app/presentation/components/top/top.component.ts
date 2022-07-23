@@ -1,8 +1,8 @@
 import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { isScullyGenerated } from '@scullyio/ng-lib';
 import { Observable, takeUntil } from 'rxjs';
-import { TakuminishProfile } from '../domain/model/resource-model/takuminishprofile.model';
-import { ProfileService } from '../domain/service/profile.service';
+import { TakuminishProfile } from '../../../domain/model/resource-model/takuminishprofile.model';
+import { ProfileService } from '../../../domain/service/profile.service';
 
 @Component({
   selector: 'app-top',
