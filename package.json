@@ -30,6 +30,7 @@
     "@scullyio/platform-server": "^2.1.0",
     "@scullyio/scully": "^2.1.0",
     "@scullyio/scully-plugin-puppeteer": "^2.1.32",
+    "microcms-js-sdk": "^2.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

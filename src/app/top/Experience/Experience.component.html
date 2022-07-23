@@ -2,20 +2,16 @@
   <h2 class="experience-title relative mb-8 text-center font-semibold text-3xl tracking-tight">Experience</h2>
   <div class="history relative py-10">
     <div class="history-timeline absolute w-0.5 inset-0 bg-emerald-700"></div>
-    <article class="history-article mx-10 mb-2 px-12 py-7 relative bg-gray-50 w-11/12 shadow-lg rounded ">
-      <div class="history-point w-6 h-6 rounded-full absolute border-solid border-emerald-700 border-2 left-2.5"></div>
-      <div class="history-title">
-        <h3>2015.04 Kagawa University</h3>
-      </div>
-      <div class="history-content">
-        <ul>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-          <li>test</li>
-        </ul>
-      </div>
-    </article>
+    <ng-container *ngFor="let experience of experiences">
+      <article class="history-article mx-10 mb-2 px-12 py-7 relative bg-gray-50 w-11/12 shadow-lg rounded ">
+        <div class="history-point w-6 h-6 rounded-full absolute border-solid border-emerald-700 border-2 left-2.5">
+        </div>
+        <div class="history-title">
+          <h3>{{experience.title}} {{experience.startAt}} {{experience.endAt}}</h3>
+        </div>
+        <div class="history-content" [innerHTML]="experience.detailedInformation">
+        </div>
+      </article>
+    </ng-container>
   </div>
 </section>
