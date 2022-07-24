@@ -10,12 +10,9 @@
 - Angular(TypeScript)
 - Scully
 - MicroCMS
-<img width="400" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635443-c99c9e76-1171-4cde-9eff-0b60c28580a3.png">
-  <img width="400" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635446-1fb9e75b-e3bd-4aa1-a07a-aed4774cbe57.png">
-  <img width="400" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635448-b76b2214-1490-49fe-b699-cb584ce30cf8.png">
-  ![microcms]()
-![scully]()
-![angular]()
+<img width="600" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635672-8426adef-d7f7-4282-91b2-4894ef76c389.png">
+  
+
 
 ## URL
-- [ポートフォリオのURL](https://takuminish.github.io/takuminishBlogJamstack/)
+- https://takuminish.github.io/takuminishBlogJamstack/
