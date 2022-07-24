@@ -3,8 +3,27 @@
     <h2 class="skills-title experience-title relative mb-8 text-center font-semibold text-3xl tracking-tight">Skills
     </h2>
   </div>
-  <div class="flex flex-wrap gap-4 justify-center">
-    <ng-container *ngFor="let skill of skills">
+  <h3 class="skills-title experience-title relative mb-8 text-center font-semibold text-2xl tracking-tight">Framework
+  </h3>
+  <div class="flex flex-wrap gap-4 justify-center mb-8">
+    <ng-container *ngFor="let skill of frameworkSkills">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">{{skill.name}} 経験年数{{skill.yearOfExperience}}年</div>
+          <div class="text-gray-700 text-base" [innerHTML]="skill.detailedInfomation">
+          </div>
+        </div>
+        <div class="px-6 pt-4 pb-2 text-center">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{skill.category}}</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <h3 class="skills-title experience-title relative mb-8 text-center font-semibold text-2xl tracking-tight">Language
+  </h3>
+  <div class="flex flex-wrap gap-4 justify-center mb-8">
+    <ng-container *ngFor="let skill of languageSkills">
       <div class="max-w-sm rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 text-center">{{skill.name}} 経験年数{{skill.yearOfExperience}}年</div>
