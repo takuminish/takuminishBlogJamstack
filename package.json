@@ -10,7 +10,7 @@
     "test": "ng test",
     "scully": "npx scully --",
     "scully:serve": "npx scully serve -- ",
-    "scully:build": "ng build --prod  && npx scully -- --scanRoutes",
+    "scully:build": "ng build --prod  && npx scully --scanRoutes",
     "scully:deploy": "ng build --prod && npx scully -- && gh-pages -d dist/static",
     "deploy": "gh-pages -d dist/static"
   },
@@ -43,6 +43,7 @@
     "@angular-devkit/build-angular": "~13.1.2",
     "@angular/cli": "~13.1.2",
     "@angular/compiler-cli": "~13.1.0",
+    "@scullyio/scully-plugin-remove-scripts": "^2.1.36",
     "@tailwindcss/typography": "^0.5.2",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
