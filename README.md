@@ -1,27 +1,21 @@
-# TakuminishBlogJamstack
+# Takuminish's Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+<img width="1437" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635219-de8e56f5-e20c-4202-b2de-dc81e86be759.png">
 
-## Development server
+## About
+- takuminish's Portfolio
+- personal blog
+  
+## Technology used
+- Angular(TypeScript)
+- Scully
+- MicroCMS
+<img width="400" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635443-c99c9e76-1171-4cde-9eff-0b60c28580a3.png">
+  <img width="400" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635446-1fb9e75b-e3bd-4aa1-a07a-aed4774cbe57.png">
+  <img width="400" alt="portfolio-image" src="https://user-images.githubusercontent.com/30888611/180635448-b76b2214-1490-49fe-b699-cb584ce30cf8.png">
+  ![microcms]()
+![scully]()
+![angular]()
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## URL
+- [ポートフォリオのURL](https://takuminish.github.io/takuminishBlogJamstack/)
