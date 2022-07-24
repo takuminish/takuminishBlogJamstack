@@ -30,7 +30,7 @@ export class LicenseComponent implements OnChanges {
    * @param changes 
    */
   ngOnChanges(changes: SimpleChanges): void {
-    this.notTechnologyLicenses = this.licenses.filter(l => !l.isITLicense)
-    this.technologyLicenses = this.licenses.filter(l => l.isITLicense);
+    this.notTechnologyLicenses = this.licenses.filter(l => !l.isITLicense).sort()
+    this.technologyLicenses = this.licenses.filter(l => l.isITLicense).sort();
   }
 }
