@@ -33,6 +33,7 @@ export class ProfileComponent {
   /**
    * コンストラクタ
    */
-  constructor() { }
+  constructor() {
+  }
 
 }
