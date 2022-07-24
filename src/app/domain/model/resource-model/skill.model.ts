@@ -6,7 +6,7 @@ export interface Skill {
     name: string;
 
     /** カテゴリ */
-    category: string;
+    category: string[];
 
     /** 詳細情報 */
     detailedInfomation: string;

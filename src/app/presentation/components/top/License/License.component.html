@@ -10,14 +10,14 @@
         <thead class="bg-gray-50 border">
           <tr>
             <th class="border px-4 py-2">資格名</th>
-            <th class="border px-4 py-2">取得年月日</th>
+            <th class="border px-4 py-2">取得年</th>
           </tr>
         </thead>
         <tbody>
           <ng-container *ngFor="let license of technologyLicenses">
             <tr>
               <td class="border px-4 py-2">{{license.name}}</td>
-              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy/MM/dd"}}</td>
+              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy"}}</td>
             </tr>
           </ng-container>
         </tbody>
@@ -27,14 +27,14 @@
         <thead class="bg-gray-50 border">
           <tr>
             <th class="border px-4 py-2">資格名</th>
-            <th class="border px-4 py-2">取得年月日</th>
+            <th class="border px-4 py-2">取得年</th>
           </tr>
         </thead>
         <tbody>
           <ng-container *ngFor="let license of notTechnologyLicenses">
             <tr>
               <td class="border px-4 py-2">{{license.name}}</td>
-              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy/MM/dd"}}</td>
+              <td class="border px-4 py-2">{{license.passedAt | date:"yyyy"}}</td>
             </tr>
           </ng-container>
         </tbody>
