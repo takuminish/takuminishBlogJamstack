@@ -31,7 +31,6 @@ export class AppComponent implements OnInit {
       filter((route) => route.outlet === 'primary'),
       mergeMap((route) => route.data)).subscribe(data => {
         let seoData = data['seo'];
-        console.log(seoData)
         this.seoService.updateTitle(seoData['title']);
         this.seoService.updateMetaTags(seoData['metaTags']);
       });
