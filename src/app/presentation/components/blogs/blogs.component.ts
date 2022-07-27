@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { Observable, takeUntil } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 /**
  * ブログ一覧コンポーネント
@@ -11,6 +12,11 @@ import { Observable, takeUntil } from 'rxjs';
   styleUrls: ['./blogs.component.scss']
 })
 export class BlogsComponent implements OnInit, OnDestroy {
+
+  // environment
+  get environment() {
+    return environment
+  }
 
   /** コンポーネント破棄時にunsubscribe用のEmitter */
   private onDestroy$ = new EventEmitter();
