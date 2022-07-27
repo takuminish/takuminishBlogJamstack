@@ -35,8 +35,9 @@ const routes: Routes = [
       }
     }
   },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
-    path: '', loadChildren: () => import('./presentation/components/top/top.module').then(m => m.TopModule),
+    path: 'home', loadChildren: () => import('./presentation/components/top/top.module').then(m => m.TopModule),
     data: {
       seo: {
         title: `Top | takuminish's Portfolio`,

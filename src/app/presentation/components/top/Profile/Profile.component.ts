@@ -12,9 +12,11 @@ import { environment } from 'src/environments/environment';
 })
 export class ProfileComponent {
 
+  // environment
   get environment() {
     return environment
   }
+
   /** プロフィール情報 */
   @Input() profile: Profile = {
     name: '',

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 /**
  * ヘッダーのコンポーネント
@@ -9,6 +10,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./Header.component.scss']
 })
 export class HeaderComponent {
+
+  // environment
+  get environment() {
+    return environment
+  }
 
   /**
    * コンストラクタ
