@@ -23,6 +23,10 @@ export const config: ScullyConfig = {
       type: 'default',
       postRenderers: [removeScripts],
     },
+    '/blogs': {
+      type: 'default',
+      postRenderers: [removeScripts],
+    },
     '/blog/:slug': {
       type: 'contentFolder',
       postRenderers: [removeScripts],
