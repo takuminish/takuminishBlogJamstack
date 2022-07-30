@@ -2,8 +2,9 @@
   <ng-container *ngFor="let page of blogList">
     <div class="flex justify-center">
       <div class="blog-card rounded-lg shadow-lg bg-white max-w-sm">
-        <a href="{{environment.url}}/{{page.route}}"></a>
-        <img class="rounded-t-lg" src="{{environment.url}}/assets/images/github-logo.png" alt="ブログ" />
+        <a href="{{environment.url}}/{{page.route}}">ブログリンク</a>
+        <img class="rounded-t-lg" src="{{environment.url}}/assets/images/blogs-logo.jpeg" alt="ブログ" width="780"
+          height="520" />
         <div class="p-6">
           <h5 class="text-gray-900 text-xl font-extrabold mb-2">{{page.title}}</h5>
           <p class="text-gray-700 text-base mb-2">
@@ -24,11 +25,11 @@
               class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-slate-400 rounded-full">{{tag}}</span>
           </div>
 
-          <dd class="text-base leading-6 font-medium text-gray-500 mb-2">
+          <span class="text-base leading-6 font-medium text-gray-500 mb-2">
             投稿日: <time [dateTime]="page.publishedAt"> {{ page.publishedAt | date: "yyyy-MM-dd"
               }}
             </time>
-          </dd>
+          </span>
         </div>
       </div>
     </div>
