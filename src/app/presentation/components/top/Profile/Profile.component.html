@@ -2,7 +2,7 @@
   <when-gt-sm>
     <div class="flex h-1/4 gap-4 justify-center">
       <div>
-        <img src="{{profile.profileImage.url}}" class="profile-img">
+        <img src="{{profile.profileImage.url}}" class="profile-img" alt="プロフィール画像" width="400" height="400">
       </div>
       <div class="w-1/2">
         <h2 class="font-semibold text-3xl tracking-tight">{{profile.name}}</h2>
@@ -10,19 +10,19 @@
         <div class="flex gap-4 justify-center">
           <ng-container *ngIf="profile.githubUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.githubUrl"><img src="{{environment.url}}/assets/images/github-logo.png"
-                width="35" height="35"></a>
+                alt="GitHubへのリンク画像" width="35" height="35"></a>
           </ng-container>
-          <ng-container *ngIf="profile.twitterUrl != undefined && profile.githubUrl != ''">
+          <ng-container *ngIf="profile.twitterUrl != undefined && profile.twitterUrl != ''">
             <a target="_blank" [href]="profile.twitterUrl"><img src="{{environment.url}}/assets/images/twitter-logo.svg"
-                width="35" height="35"></a>
+                alt="Twitterへのリンク画像" width="35" height="35"></a>
           </ng-container>
-          <ng-container *ngIf="profile.qiitaUrl != undefined && profile.githubUrl != ''">
+          <ng-container *ngIf="profile.qiitaUrl != undefined && profile.qiitaUrl != ''">
             <a target="_blank" [href]="profile.qiitaUrl"><img src="{{environment.url}}/assets/images/qiita-logo.png"
-                width="35" height="35"></a>
+                alt="Qiitaへのリンク画像" width="35" height="35"></a>
           </ng-container>
-          <ng-container *ngIf="profile.zennUrl != undefined && profile.githubUrl != ''">
+          <ng-container *ngIf="profile.zennUrl != undefined && profile.zennUrl != ''">
             <a target="_blank" [href]="profile.zennUrl"><img src="{{environment.url}}/assets/images/zenn-logo.svg"
-                width="35" height="35"></a>
+                alt="Zennへのリンク画像" width="35" height="35"></a>
           </ng-container>
         </div>
       </div>
@@ -31,7 +31,7 @@
   <when-lt-md>
     <div class="flex flex-col">
       <div class="profile-img-container">
-        <img src="{{profile.profileImage.url}}" class="profile-img">
+        <img src="{{profile.profileImage.url}}" class="profile-img" alt="プロフィール画像">
       </div>
       <div class="profile-content-container">
         <h2 class="font-semibold text-3xl tracking-tight">{{profile.name}}</h2>
@@ -39,19 +39,19 @@
         <div class="flex gap-4 justify-center">
           <ng-container *ngIf="profile.githubUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.githubUrl"><img src="{{environment.url}}/assets/images/github-logo.png"
-                width="35" height="35"></a>
+                alt="GitHubへのリンク画像" width="35" height="35"></a>
           </ng-container>
           <ng-container *ngIf="profile.twitterUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.twitterUrl"><img src="{{environment.url}}/assets/images/twitter-logo.svg"
-                width="35" height="35"></a>
+                alt="Twitterへのリンク画像" width="35" height="35"></a>
           </ng-container>
           <ng-container *ngIf="profile.qiitaUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.qiitaUrl"><img src="{{environment.url}}/assets/images/qiita-logo.png"
-                width="35" height="35"></a>
+                alt="Qiitaへのリンク画像" width="35" height="35"></a>
           </ng-container>
           <ng-container *ngIf="profile.zennUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.zennUrl"><img src="{{environment.url}}/assets/images/zenn-logo.svg"
-                width="35" height="35"></a>
+                alt="Zennへのリンク画像" width="35" height="35"></a>
           </ng-container>
         </div>
       </div>
