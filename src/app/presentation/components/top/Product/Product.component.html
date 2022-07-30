@@ -3,7 +3,8 @@
   <div class="flex flex-wrap gap-4 justify-center">
     <ng-container *ngFor="let product of products">
       <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="{{product.productImage.url}}" alt="hoge">
+        <img class="w-full" src="{{product.productImage.url}}" alt="{{product.name}}の画像"
+          width="{{product.productImage.width}}" height="{{product.productImage.height}}">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{{product.name}}</div>
           <div class="text-gray-700 text-base" [innerHTML]="product.detailedInformation">
