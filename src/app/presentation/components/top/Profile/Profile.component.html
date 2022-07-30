@@ -12,15 +12,15 @@
             <a target="_blank" [href]="profile.githubUrl"><img src="{{environment.url}}/assets/images/github-logo.png"
                 alt="GitHubへのリンク画像" width="35" height="35"></a>
           </ng-container>
-          <ng-container *ngIf="profile.twitterUrl != undefined && profile.githubUrl != ''">
+          <ng-container *ngIf="profile.twitterUrl != undefined && profile.twitterUrl != ''">
             <a target="_blank" [href]="profile.twitterUrl"><img src="{{environment.url}}/assets/images/twitter-logo.svg"
                 alt="Twitterへのリンク画像" width="35" height="35"></a>
           </ng-container>
-          <ng-container *ngIf="profile.qiitaUrl != undefined && profile.githubUrl != ''">
+          <ng-container *ngIf="profile.qiitaUrl != undefined && profile.qiitaUrl != ''">
             <a target="_blank" [href]="profile.qiitaUrl"><img src="{{environment.url}}/assets/images/qiita-logo.png"
                 alt="Qiitaへのリンク画像" width="35" height="35"></a>
           </ng-container>
-          <ng-container *ngIf="profile.zennUrl != undefined && profile.githubUrl != ''">
+          <ng-container *ngIf="profile.zennUrl != undefined && profile.zennUrl != ''">
             <a target="_blank" [href]="profile.zennUrl"><img src="{{environment.url}}/assets/images/zenn-logo.svg"
                 alt="Zennへのリンク画像" width="35" height="35"></a>
           </ng-container>
