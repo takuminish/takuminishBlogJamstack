@@ -39,19 +39,19 @@
         <div class="flex gap-4 justify-center">
           <ng-container *ngIf="profile.githubUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.githubUrl"><img src="{{environment.url}}/assets/images/github-logo.png"
-                width="35" height="35"></a>
+                alt="GitHubへのリンク画像" width="35" height="35"></a>
           </ng-container>
           <ng-container *ngIf="profile.twitterUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.twitterUrl"><img src="{{environment.url}}/assets/images/twitter-logo.svg"
-                width="35" height="35"></a>
+                alt="Twitterへのリンク画像" width="35" height="35"></a>
           </ng-container>
           <ng-container *ngIf="profile.qiitaUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.qiitaUrl"><img src="{{environment.url}}/assets/images/qiita-logo.png"
-                width="35" height="35"></a>
+                alt="Qiitaへのリンク画像" width="35" height="35"></a>
           </ng-container>
           <ng-container *ngIf="profile.zennUrl != undefined && profile.githubUrl != ''">
             <a target="_blank" [href]="profile.zennUrl"><img src="{{environment.url}}/assets/images/zenn-logo.svg"
-                width="35" height="35"></a>
+                alt="Zennへのリンク画像" width="35" height="35"></a>
           </ng-container>
         </div>
       </div>
