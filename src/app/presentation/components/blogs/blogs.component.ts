@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { Observable, takeUntil } from 'rxjs';
+import { BlogScullyRoute } from 'src/app/domain/model/response-model/blogscullyroute.model';
 import { environment } from 'src/environments/environment';
 
 /**
@@ -22,7 +23,7 @@ export class BlogsComponent implements OnInit, OnDestroy {
   private onDestroy$ = new EventEmitter();
 
   /** Scullyから取得するRouting */
-  links$: Observable<ScullyRoute[]> = this.scully.available$;
+  links$: Observable<BlogScullyRoute[]> = this.scully.available$;
 
   /** Scullyから取得するブログ記事一覧 */
   blogList: ScullyRoute[] = [];
